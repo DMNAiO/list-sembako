@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sembakoi — pencatatan stok sembako dan frozen food yang rapi, cepat, dan tersimpan otomatis." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Sembakoi — Update Stok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>Pembaruan stok lebih rapi · perubahan tersimpan otomatis</p>
+    <button class="announcement-close" type="button" aria-label="Tutup pengumuman">×</button>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Sembakoi beranda">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">sembakoi<span>.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a class="active" href="#beranda">Beranda</a>
+        <a href="#kategori">Bagian</a>
+        <a href="#produk">Stok</a>
+        <a href="#tentang">Cara kerja</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" type="button" aria-label="Buka pencarian" aria-expanded="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="search-panel" aria-hidden="true">
+      <div class="container search-inner">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></svg>
+        <input id="search-input" type="search" placeholder="Cari nama barang..." autocomplete="off" />
+        <button class="search-clear" type="button" aria-label="Hapus pencarian">Esc</button>
+      </div>
+    </div>
+    <div class="mobile-nav" aria-hidden="true">
+      <a href="#beranda">Beranda</a>
+      <a href="#kategori">Bagian</a>
+      <a href="#produk">Stok</a>
+      <a href="#tentang">Cara kerja</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Catat stok, tetap teratur</span>
+          <h1>Kelola stok sembako <em>tanpa ribet.</em></h1>
+          <p class="hero-description">Masukkan jumlah dan satuan untuk setiap barang. Urutan tetap, perubahan tersimpan, dan update siap dikirim ke WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#produk">Mulai mencatat <span>→</span></a>
+            <a class="text-link" href="#tentang">Cara kerja <span>↗</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>+</span></div>
+            <div><strong>129 barang</strong><span> dalam dua bagian stok</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85" alt="Rak bahan makanan untuk ilustrasi halaman stok" />
+          </div>
+          <div class="floating-card delivery-card"><span class="floating-icon">✦</span><div><strong>Auto tersimpan</strong><small>Setiap perubahan dicatat</small></div></div>
+          <div class="floating-card fresh-card"><span class="fresh-check">✓</span><div><strong>Siap dibagikan</strong><small>Ke WhatsApp kapan saja</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Keunggulan pencatatan stok">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon">⌁</span><div><strong>Urutan tetap</strong><small>Sesuai daftar awal</small></div></div>
+        <div class="trust-item"><span class="trust-icon">◷</span><div><strong>Auto tersimpan</strong><small>Tak hilang saat refresh</small></div></div>
+        <div class="trust-item"><span class="trust-icon">♡</span><div><strong>Jumlah fleksibel</strong><small>Angka dan satuan bebas</small></div></div>
+        <div class="trust-item"><span class="trust-icon">◎</span><div><strong>WhatsApp ready</strong><small>Kirim update stok</small></div></div>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="kategori">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">Pilih bagian</span><h2>Daftar stok terstruktur</h2></div><a class="text-link" href="#produk">Buka daftar <span>→</span></a></div>
+        <div class="category-grid">
+          <button class="category-card category-green" data-category="SEMBAKO"><span class="category-emoji">🌾</span><span><strong>SEMBAKO</strong><small>113 barang</small></span><b>↗</b></button>
+          <button class="category-card category-blue" data-category="FROZEN FOOD"><span class="category-emoji">❄️</span><span><strong>FROZEN FOOD</strong><small>16 barang</small></span><b>↗</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="produk">
+      <div class="container">
+        <div class="section-heading products-heading">
+          <div><span class="eyebrow">Pencatatan stok</span><h2>Daftar barang</h2><p class="stock-caption">Data awal dari daftar terbaru · perubahan tersimpan otomatis</p></div>
+          <div class="product-controls">
+            <div class="filter-tabs" role="tablist" aria-label="Bagian stok"><button class="filter-tab active" data-filter="SEMBAKO" role="tab">SEMBAKO</button><button class="filter-tab" data-filter="FROZEN FOOD" role="tab">FROZEN FOOD</button></div>
+            <button class="button button-primary finish-stock" id="finish-stock" type="button">Selesai <span>→</span></button>
+          </div>
+        </div>
+        <div class="stock-status"><span id="stock-progress">129/129 barang dicatat</span><span>Disimpan di perangkat ini</span></div>
+        <div class="product-grid stock-grid" id="product-grid"></div>
+        <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>Barang tidak ditemukan</h3><p>Coba kata kunci lain.</p><button class="button button-secondary" type="button" id="reset-filter">Tampilkan semua barang</button></div>
+      </div>
+    </section>
+
+    <section class="promo-section">
+      <div class="container promo-card"><div class="promo-copy"><span class="eyebrow">Satu klik untuk lanjut</span><h2>Update stok siap<br /><em>dibagikan.</em></h2><p>Tekan Selesai setelah pencatatan beres. Pesan WhatsApp akan disusun mengikuti urutan daftar.</p><button class="button button-light" id="finish-stock-promo" type="button">Selesai & kirim <span>→</span></button></div><div class="promo-art" aria-hidden="true"><span class="promo-blob"></span><span class="promo-basket">🧾</span><span class="promo-leaf leaf-one">✦</span><span class="promo-leaf leaf-two">✦</span><span class="promo-spark">✳</span></div></div>
+    </section>
+
+    <section class="section story-section" id="tentang">
+      <div class="container story-grid"><div class="story-image"><img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1000&q=85" alt="Rak bahan makanan yang tertata" /><span class="story-badge"><strong>129</strong><small>Barang terdaftar</small></span></div><div class="story-copy"><span class="eyebrow">Cara kerja</span><h2>Catat seperlunya, kirim saat sudah siap.</h2><p>Setiap barang sudah tersusun sesuai daftar sumber. Isi angka, pilih satuan, lalu lanjutkan ke barang berikutnya tanpa kehilangan urutan.</p><p>Data tersimpan otomatis di perangkat ini. Barang yang masih kosong tidak akan masuk ke pesan WhatsApp.</p><a class="text-link" href="#produk">Mulai dari daftar stok <span>↗</span></a></div></div>
+    </section>
+
+    <section class="newsletter-section"><div class="container newsletter-card"><div><span class="eyebrow">Sebelum membagikan</span><h2>Pastikan catatanmu sudah lengkap.</h2><p>Nilai 0 tetap akan dikirim jika memang sengaja dicatat. Kolom kosong akan dilewati.</p></div><button class="button button-primary" id="finish-stock-secondary" type="button">Selesai <span>→</span></button></div></section>
+  </main>
+
+  <footer class="site-footer" id="footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="#beranda"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">sembakoi<span>.</span></span></a><p>Pencatatan stok sembako dan frozen food yang rapi, cepat, dan siap dibagikan.</p><div class="social-links"><a href="#footer" aria-label="Instagram">ig</a><a href="#footer" aria-label="TikTok">tk</a><a href="#footer" aria-label="WhatsApp">wa</a></div></div><div class="footer-links"><div><h3>Daftar</h3><a href="#produk">Semua stok</a><a href="#kategori">Bagian stok</a><a href="#produk">Sembako</a></div><div><h3>Bantuan</h3><a href="#tentang">Cara mencatat</a><a href="#tentang">Penyimpanan</a><a href="#produk">Format WhatsApp</a></div><div><h3>Catatan</h3><a href="#produk">Urutan tetap</a><a href="#produk">Satuan</a><a href="#produk">Nilai kosong</a></div></div></div><div class="container footer-bottom"><span>© 2024 Sembakoi. Pencatatan stok yang lebih tenang.</span><span>Data tersimpan lokal</span></div></footer>
+
+  <div class="toast" role="status" aria-live="polite"><span class="toast-icon">✓</span><span id="toast-message">Perubahan tersimpan</span></div>
+  <script src="app.js"></script>
+</body>
+</html>
